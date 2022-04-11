@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //задание 1
+        let lang = ['js', 'css', 'html'];
+        alert(lang[0]);
+
+        //задание 2
+        const all = [0, 1, false, 2, undefined, '', 3, null];
+        //const filteredAll = all.filter(el => el !== 0);
+        const filteredAll = all.filter(function (number) {
+            return number;
+        });
+        alert(filteredAll);
+
+        //задание 3
+        const arr = [
+            [1, 2],
+            [1, 2, 3],
+            [1, 2, 3, 4]
+        ];
+        const el = arr.findIndex(el => el > 3);
+        alert(el)
+    </script>
+
+</body>
+
+</html>
